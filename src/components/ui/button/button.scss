@@ -1,0 +1,37 @@
+.button {
+  font-family: "Prompt", sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 33px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+
+  &.redButton {
+    background-image: radial-gradient(
+      ellipse farthest-corner at top left,
+      #c41417 0%,
+      #b31315 100%
+    );
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 14px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &.textButton {
+    color: #6f6f6f;
+    background-color: transparent;
+
+    &:hover {
+      color: #c41417;
+      transform: scale(1.04);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
